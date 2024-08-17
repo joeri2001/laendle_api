@@ -13,6 +13,7 @@ origins = [
     "http://localhost:5500",
     "http://127.0.0.1:5500",
     "https://laendle.joeribrinks.nl",
+    "https://5e28b07c-8800-47e1-88a6-41a6a86aab25.dev.wix-code.com",
 ]
 
 app.add_middleware(
