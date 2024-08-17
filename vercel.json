@@ -1,8 +1,18 @@
 {
-    "functions": {
-      "api/main.py": {
-        "runtime": "python3.10"
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
       }
     }
-  }
-  
+  ],
+  "routes": [
+    {
+      "src": "/laendle",
+      "dest": "main.py"
+    }
+  ]
+}
